@@ -1,0 +1,12 @@
+
+ProgrammerClicker.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+CatStackGames360x360
+  rotate: false
+  xy: 1, 1
+  size: 360, 360
+  orig: 360, 360
+  offset: 0, 0
+  index: -1
