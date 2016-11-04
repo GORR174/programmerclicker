@@ -28,7 +28,7 @@ public class DesktopLauncher {
 
         final boolean LANDSCAPE  = true;
         final boolean PORTRAIT = false;
-        final boolean screenOrientation = LANDSCAPE;
+        final boolean screenOrientation = PORTRAIT;
 
         private final int width;
         private final int height;
