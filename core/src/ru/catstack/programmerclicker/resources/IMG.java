@@ -6,6 +6,8 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
 public enum IMG {
     CATSTACK("CatStackGames360x360"),
+    HOUSE1("House1"),
+    DOOR1("Door1"),
     ;
 
     private static final String ATLAS_PATH = "ProgrammerClicker.pack";

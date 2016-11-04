@@ -5,8 +5,22 @@ filter: Nearest,Nearest
 repeat: none
 CatStackGames360x360
   rotate: false
-  xy: 1, 1
+  xy: 1, 43
   size: 360, 360
   orig: 360, 360
+  offset: 0, 0
+  index: -1
+Door1
+  rotate: false
+  xy: 363, 203
+  size: 120, 200
+  orig: 120, 200
+  offset: 0, 0
+  index: -1
+House1
+  rotate: false
+  xy: 363, 1
+  size: 120, 200
+  orig: 120, 200
   offset: 0, 0
   index: -1
