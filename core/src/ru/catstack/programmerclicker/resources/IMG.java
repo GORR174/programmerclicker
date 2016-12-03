@@ -5,9 +5,17 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
 public enum IMG {
-    CATSTACK("CatStackGames360x360"),
+    CATSTACK("CatStackGames120x120"),
     HOUSE1("House1"),
     DOOR1("Door1"),
+    TABLE1("Table1"),
+    PICTURE1("Picture1"),
+    PICTURE2("Picture2"),
+    TRASHCAN1("Trashcan1"),
+    SHELF1("Shelf1"),
+    COMPUTER1_1("Computer1"),
+    COMPUTER1_2("Computer2"),
+    PLAYER1("Player1"),
     ;
 
     private static final String ATLAS_PATH = "ProgrammerClicker.pack";

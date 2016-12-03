@@ -3,9 +3,9 @@ package ru.catstack.programmerclicker.objects.interior;
 import ru.catstack.programmerclicker.objects.PlayerCore;
 import ru.catstack.programmerclicker.objects.UpgradableObject;
 
-public class Door extends UpgradableObject {
+public class Computer2 extends UpgradableObject{
 
-    public Door() {
-        super(PlayerCore.getThisDoor());
+    public Computer2() {
+        super(PlayerCore.getThisComputer2());
     }
 }

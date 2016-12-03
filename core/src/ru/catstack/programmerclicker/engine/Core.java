@@ -14,6 +14,7 @@ public class Core {
     public static final int D_HEIGHT_HALF = D_HEIGHT >> 1;
     public static Viewport viewport;
     public static float gameSpeed = 1;
+    public static int codeLines = 0;
 
     public static void init(final int width, final int height) {
         WIDTH = width;
