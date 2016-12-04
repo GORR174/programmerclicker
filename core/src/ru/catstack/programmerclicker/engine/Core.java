@@ -15,6 +15,10 @@ public class Core {
     public static Viewport viewport;
     public static float gameSpeed = 1;
     public static int codeLines = 0;
+    public static int codeEverySecond = 0;
+    public static int codeEveryClick = 1;
+    public static float money = 0;
+    public static float moneyEverySecond = 0;
 
     public static void init(final int width, final int height) {
         WIDTH = width;
