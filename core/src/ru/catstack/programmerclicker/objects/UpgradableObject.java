@@ -20,6 +20,7 @@ public class UpgradableObject extends Object{
         //set new TextureRegion if TRegion of this object != current TRegion
         if(!sprite.getTexture().equals(thisUpgrade.getUpgradeTexture())){
             sprite.setRegion(thisUpgrade.getUpgradeTexture());
+            sprite.setSize(thisUpgrade.getUpgradeTexture().getRegionWidth(), thisUpgrade.getUpgradeTexture().getRegionHeight());
             sprite.setX(thisUpgrade.getX());
             sprite.setY(thisUpgrade.getY());
         }
