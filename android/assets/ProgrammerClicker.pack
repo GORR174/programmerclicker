@@ -66,16 +66,23 @@ Player1
   orig: 15, 29
   offset: 0, 0
   index: -1
-Picture1
+Picture3
   rotate: false
   xy: 246, 52
+  size: 13, 23
+  orig: 13, 23
+  offset: 0, 0
+  index: -1
+Picture1
+  rotate: false
+  xy: 368, 152
   size: 12, 23
   orig: 12, 23
   offset: 0, 0
   index: -1
 Computer1
   rotate: false
-  xy: 368, 164
+  xy: 398, 179
   size: 12, 11
   orig: 12, 11
   offset: 0, 0

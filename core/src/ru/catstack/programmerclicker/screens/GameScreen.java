@@ -5,8 +5,8 @@ import ru.catstack.programmerclicker.engine.Core;
 import ru.catstack.programmerclicker.engine.MyGdxGame;
 import ru.catstack.programmerclicker.objects.interior.ScreenItems;
 import ru.catstack.programmerclicker.resources.Fonts;
-import ru.catstack.programmerclicker.utils.Timer;
 import ru.catstack.programmerclicker.utils.TextUtils;
+import ru.catstack.programmerclicker.utils.Timer;
 
 public class GameScreen extends Base2DScreen {
 
@@ -17,7 +17,6 @@ public class GameScreen extends Base2DScreen {
     Timer everySecond = new Timer(1, () -> {
         Core.codeLines += Core.codeEverySecond;
         Core.money += Core.moneyEverySecond;
-        Gdx.app.debug("CodeLines", String.valueOf(Core.codeLines));
     });
 
     @Override

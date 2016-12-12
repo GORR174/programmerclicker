@@ -7,6 +7,8 @@ public enum Upgrades {
     HOUSE1(IMG.HOUSE1.getTextureRegion(), 0, 0, 0, true),
     DOOR1(IMG.DOOR1.getTextureRegion(), 78, 106, 0, true),
     PICTURE1(IMG.PICTURE1.getTextureRegion(), 30, 154, 0, true),
+    PICTURE2(IMG.PICTURE2.getTextureRegion(), 24, 150, 0, true),
+    PICTURE3(IMG.PICTURE3.getTextureRegion(), 30, 154, 0, true),
     TABLE1(IMG.TABLE1.getTextureRegion(), 6, 47, 0, true),
     TRASHCAN1(IMG.TRASHCAN1.getTextureRegion(), 0, 0, 0, true),
     SHELF1(IMG.SHELF1.getTextureRegion(), 0, 90, 0, true),

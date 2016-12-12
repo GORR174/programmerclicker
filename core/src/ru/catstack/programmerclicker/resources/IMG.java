@@ -11,6 +11,7 @@ public enum IMG {
     TABLE1("Table1"),
     PICTURE1("Picture1"),
     PICTURE2("Picture2"),
+    PICTURE3("Picture3"),
     TRASHCAN1("Trashcan1"),
     SHELF1("Shelf1"),
     COMPUTER1_1("Computer1"),
