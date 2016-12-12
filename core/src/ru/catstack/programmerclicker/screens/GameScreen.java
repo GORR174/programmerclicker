@@ -4,7 +4,9 @@ import com.badlogic.gdx.Gdx;
 import ru.catstack.programmerclicker.engine.Core;
 import ru.catstack.programmerclicker.engine.MyGdxGame;
 import ru.catstack.programmerclicker.objects.interior.ScreenItems;
+import ru.catstack.programmerclicker.resources.Fonts;
 import ru.catstack.programmerclicker.utils.Timer;
+import ru.catstack.programmerclicker.utils.TextUtils;
 
 public class GameScreen extends Base2DScreen {
 
@@ -40,6 +42,7 @@ public class GameScreen extends Base2DScreen {
         super.draw();
         batch.begin();
         ScreenItems.draw(batch);
+        TextUtils.centerTextRender(Fonts.DEFAULT_FONT.getFont(), String.valueOf(Core.codeLines), Core.D_HEIGHT_HALF+64, batch);
         batch.end();
     }
 }
