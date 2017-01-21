@@ -17,6 +17,13 @@ public enum IMG {
     COMPUTER1_1("Computer1"),
     COMPUTER1_2("Computer2"),
     PLAYER1("Player1"),
+    HUD("HUD"),
+    SHOP_BUTTON_UP("ShopBUp"),
+    SHOP_BUTTON_DOWN("ShopBDown"),
+    SHOP_GUI("ShopGUI"),
+    SHOP_CLOSE_BUTTON_UP("ShopCloseButtonUp"),
+    SHOP_CLOSE_BUTTON_DOWN("ShopCloseButtonDown"),
+    SHOP_ITEM("ShopItem"),
     ;
 
     private static final String ATLAS_PATH = "ProgrammerClicker.pack";

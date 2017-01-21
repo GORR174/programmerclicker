@@ -1,20 +1,41 @@
 package ru.catstack.programmerclicker.objects;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import ru.catstack.programmerclicker.engine.Core;
 import ru.catstack.programmerclicker.utils.Utils;
 
 public class Button extends Object{
 
-    Runnable action = () -> {};
+    private Runnable action = () -> {};
+    private boolean isTouched = false;
+    private TextureRegion upTexture;
+    private TextureRegion downTexture;
 
-    public Button(TextureRegion textureRegion, float x, float y){
-        super(textureRegion, x, y);
+    public Button(TextureRegion upTexture, TextureRegion downTexture, float x, float y){
+        super(upTexture, x, y);
+        this.upTexture = upTexture;
+        this.downTexture = downTexture;
+    }
+
+    public Button(TextureRegion upTexture, float x, float y){
+        super(upTexture, x, y);
+        this.upTexture = upTexture;
     }
 
     @Override
     public void update(){
-        if(Utils.onObjectTouched(sprite.getBoundingRectangle())){
+        if(Utils.isObjectTouched(sprite.getBoundingRectangle())){
+            isTouched = true;
+            Core.onObjectClicked = true;
+            if(downTexture != null) sprite.setRegion(downTexture);
+        } else if(isTouched && !Gdx.input.isTouched()) {
+            isTouched = false;
             action.run();
+            sprite.setRegion(upTexture);
+        } else if(isTouched && Gdx.input.isTouched()){
+            isTouched = false;
+            sprite.setRegion(upTexture);
         }
     }
 

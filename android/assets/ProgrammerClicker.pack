@@ -5,85 +5,134 @@ filter: Nearest,Nearest
 repeat: none
 House1
   rotate: false
-  xy: 2, 51
+  xy: 2, 54
+  size: 120, 200
+  orig: 120, 200
+  offset: 0, 0
+  index: -1
+ShopGUI
+  rotate: false
+  xy: 124, 54
   size: 120, 200
   orig: 120, 200
   offset: 0, 0
   index: -1
 Trashcan1
   rotate: false
-  xy: 124, 51
+  xy: 246, 54
   size: 120, 200
   orig: 120, 200
   offset: 0, 0
   index: -1
 CatStackGames120x120
   rotate: false
-  xy: 246, 131
+  xy: 368, 134
   size: 120, 120
   orig: 120, 120
   offset: 0, 0
   index: -1
+HUD
+  rotate: false
+  xy: 2, 34
+  size: 120, 18
+  orig: 120, 18
+  offset: 0, 0
+  index: -1
 Table1
   rotate: false
-  xy: 246, 77
+  xy: 368, 80
   size: 78, 52
   orig: 78, 52
   offset: 0, 0
   index: -1
+ShopItem
+  rotate: false
+  xy: 2, 10
+  size: 104, 22
+  orig: 104, 22
+  offset: 0, 0
+  index: -1
 Computer2
   rotate: false
-  xy: 2, 2
+  xy: 368, 31
   size: 81, 47
   orig: 81, 47
   offset: 0, 0
   index: -1
+Picture2
+  rotate: false
+  xy: 108, 2
+  size: 24, 30
+  orig: 24, 30
+  offset: 0, 0
+  index: -1
 Door1
   rotate: false
-  xy: 368, 177
+  xy: 451, 58
   size: 28, 74
   orig: 28, 74
   offset: 0, 0
   index: -1
 Shelf1
   rotate: false
-  xy: 398, 192
+  xy: 481, 73
   size: 28, 59
   orig: 28, 59
   offset: 0, 0
   index: -1
-Picture2
-  rotate: false
-  xy: 326, 99
-  size: 24, 30
-  orig: 24, 30
-  offset: 0, 0
-  index: -1
 Player1
   rotate: false
-  xy: 85, 20
+  xy: 490, 225
   size: 15, 29
   orig: 15, 29
   offset: 0, 0
   index: -1
 Picture3
   rotate: false
-  xy: 246, 52
+  xy: 451, 33
   size: 13, 23
   orig: 13, 23
   offset: 0, 0
   index: -1
 Picture1
   rotate: false
-  xy: 368, 152
+  xy: 490, 200
   size: 12, 23
   orig: 12, 23
   offset: 0, 0
   index: -1
 Computer1
   rotate: false
-  xy: 398, 179
+  xy: 124, 41
   size: 12, 11
   orig: 12, 11
+  offset: 0, 0
+  index: -1
+ShopCloseButtonDown
+  rotate: false
+  xy: 124, 34
+  size: 9, 5
+  orig: 9, 5
+  offset: 0, 0
+  index: -1
+ShopBDown
+  rotate: false
+  xy: 481, 60
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+ShopBUp
+  rotate: false
+  xy: 466, 45
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+ShopCloseButtonUp
+  rotate: false
+  xy: 2, 3
+  size: 9, 5
+  orig: 9, 5
   offset: 0, 0
   index: -1

@@ -19,6 +19,7 @@ public class Core {
     public static int codeEveryClick = 1;
     public static float money = 0;
     public static float moneyEverySecond = 0;
+    public static boolean onObjectClicked = false;
 
     public static void init(final int width, final int height) {
         WIDTH = width;
