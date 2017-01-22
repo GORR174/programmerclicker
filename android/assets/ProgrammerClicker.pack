@@ -101,37 +101,65 @@ Picture1
   orig: 12, 23
   offset: 0, 0
   index: -1
+BuyButtonDown
+  rotate: false
+  xy: 124, 36
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+BuyButtonUp
+  rotate: false
+  xy: 142, 36
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+WatchButtonDown
+  rotate: false
+  xy: 160, 36
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+WatchButtonUp
+  rotate: false
+  xy: 178, 36
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
 Computer1
   rotate: false
-  xy: 124, 41
+  xy: 481, 60
   size: 12, 11
   orig: 12, 11
   offset: 0, 0
   index: -1
-ShopCloseButtonDown
-  rotate: false
-  xy: 124, 34
-  size: 9, 5
-  orig: 9, 5
-  offset: 0, 0
-  index: -1
 ShopBDown
-  rotate: false
-  xy: 481, 60
-  size: 11, 11
-  orig: 11, 11
-  offset: 0, 0
-  index: -1
-ShopBUp
   rotate: false
   xy: 466, 45
   size: 11, 11
   orig: 11, 11
   offset: 0, 0
   index: -1
-ShopCloseButtonUp
+ShopBUp
+  rotate: false
+  xy: 490, 187
+  size: 11, 11
+  orig: 11, 11
+  offset: 0, 0
+  index: -1
+ShopCloseButtonDown
   rotate: false
   xy: 2, 3
+  size: 9, 5
+  orig: 9, 5
+  offset: 0, 0
+  index: -1
+ShopCloseButtonUp
+  rotate: false
+  xy: 196, 47
   size: 9, 5
   orig: 9, 5
   offset: 0, 0

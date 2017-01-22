@@ -24,6 +24,10 @@ public enum IMG {
     SHOP_CLOSE_BUTTON_UP("ShopCloseButtonUp"),
     SHOP_CLOSE_BUTTON_DOWN("ShopCloseButtonDown"),
     SHOP_ITEM("ShopItem"),
+    BUY_BUTTON_UP("BuyButtonUp"),
+    BUY_BUTTON_DOWN("BuyButtonDown"),
+    WATCH_BUTTON_UP("WatchButtonUp"),
+    WATCH_BUTTON_DOWN("WatchButtonDown"),
     ;
 
     private static final String ATLAS_PATH = "ProgrammerClicker.pack";

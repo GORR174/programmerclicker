@@ -3,6 +3,7 @@ package ru.catstack.programmerclicker.objects;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import ru.catstack.programmerclicker.engine.Core;
+import ru.catstack.programmerclicker.resources.IMG;
 import ru.catstack.programmerclicker.utils.Utils;
 
 public class Button extends Object{
@@ -16,6 +17,12 @@ public class Button extends Object{
         super(upTexture, x, y);
         this.upTexture = upTexture;
         this.downTexture = downTexture;
+    }
+
+    public Button(IMG upTexture, IMG downTexture, float x, float y){
+        super(upTexture.getTextureRegion(), x, y);
+        this.upTexture = upTexture.getTextureRegion();
+        this.downTexture = downTexture.getTextureRegion();
     }
 
     public Button(TextureRegion upTexture, float x, float y){

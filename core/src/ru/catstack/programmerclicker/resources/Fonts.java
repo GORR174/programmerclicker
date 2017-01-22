@@ -8,6 +8,7 @@ import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFont
 
 public enum Fonts {
     DEFAULT_FONT("Minecraft_rus.ttf", 8, 0.6f, Color.WHITE, Color.BLACK),
+    DEFAULT_SMALL_FONT("Minecraft_rus.ttf", 7, 0f, GameColor.SHOP.get(), Color.WHITE),
     ;
 
     private final String path;

@@ -17,7 +17,7 @@ public class Shop {
         close = new Button(IMG.SHOP_CLOSE_BUTTON_UP.getTextureRegion(), IMG.SHOP_CLOSE_BUTTON_DOWN.getTextureRegion(), 104, 188);
         close.setAction(() -> isOpen = false);
 
-        shopItem1 = new ShopItem(IMG.PICTURE1.getTextureRegion(), 8, 148);
+        shopItem1 = new ShopItem("Girl picture", 8, 148);
     }
 
     public static void update(){

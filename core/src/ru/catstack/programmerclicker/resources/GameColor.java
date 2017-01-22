@@ -5,6 +5,7 @@ import com.badlogic.gdx.graphics.Color;
 public enum GameColor {
 
     BG2(0xFFFFCC),
+    SHOP(0x002fa9),
     INTRO_BG(237, 212, 153);
 
     private final Color color;

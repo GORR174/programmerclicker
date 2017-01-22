@@ -1,33 +1,36 @@
 package ru.catstack.programmerclicker.objects;
 
-import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import ru.catstack.programmerclicker.resources.Fonts;
 import ru.catstack.programmerclicker.resources.IMG;
+import ru.catstack.programmerclicker.utils.TextUtils;
 
 public class ShopItem extends Object {
 
-    TextureRegion textureRegion;
-    Sprite sprite1;
+    Button watchButton;
+    Button buyButton;
+    String name;
 
-    public ShopItem(TextureRegion img, float x, float y) {
+    public ShopItem(String name, float x, float y) {
         super(IMG.SHOP_ITEM.getTextureRegion(), x, y);
-        textureRegion = img;
-        float t = (float) img.getRegionHeight()/(float) 16;
-        sprite1 = new Sprite(textureRegion);
-        sprite1.scale(-t);
-        sprite1.setX(sprite.getX()+6);
-        sprite1.setY(sprite.getY()+3);
+        watchButton = new Button(IMG.WATCH_BUTTON_UP, IMG.WATCH_BUTTON_DOWN, x+3, y+3);
+        buyButton = new Button(IMG.BUY_BUTTON_UP, IMG.BUY_BUTTON_DOWN, x+85, y+3);
+        this.name = name;
     }
 
     @Override
     public void update() {
         super.update();
+        watchButton.update();
+        buyButton.update();
     }
 
     @Override
     public void draw(SpriteBatch batch) {
         super.draw(batch);
-        sprite1.draw(batch);
+        watchButton.draw(batch);
+        buyButton.draw(batch);
+
+        TextUtils.centerTextRender(Fonts.DEFAULT_SMALL_FONT.getFont(), name, sprite.getY()+14, batch);
     }
 }
