@@ -5,162 +5,162 @@ filter: Nearest,Nearest
 repeat: none
 House1
   rotate: false
-  xy: 2, 54
-  size: 120, 200
-  orig: 120, 200
+  xy: 2, 110
+  size: 240, 400
+  orig: 240, 400
   offset: 0, 0
   index: -1
 ShopGUI
   rotate: false
-  xy: 124, 54
-  size: 120, 200
-  orig: 120, 200
+  xy: 244, 110
+  size: 240, 400
+  orig: 240, 400
   offset: 0, 0
   index: -1
 Trashcan1
   rotate: false
-  xy: 246, 54
-  size: 120, 200
-  orig: 120, 200
+  xy: 486, 110
+  size: 240, 400
+  orig: 240, 400
   offset: 0, 0
   index: -1
 CatStackGames120x120
   rotate: false
-  xy: 368, 134
-  size: 120, 120
-  orig: 120, 120
+  xy: 728, 270
+  size: 240, 240
+  orig: 240, 240
   offset: 0, 0
   index: -1
 HUD
   rotate: false
-  xy: 2, 34
-  size: 120, 18
-  orig: 120, 18
+  xy: 2, 72
+  size: 240, 36
+  orig: 240, 36
   offset: 0, 0
   index: -1
 Table1
   rotate: false
-  xy: 368, 80
-  size: 78, 52
-  orig: 78, 52
+  xy: 728, 164
+  size: 156, 104
+  orig: 156, 104
   offset: 0, 0
   index: -1
 ShopItem
   rotate: false
-  xy: 2, 10
-  size: 104, 22
-  orig: 104, 22
+  xy: 2, 26
+  size: 208, 44
+  orig: 208, 44
   offset: 0, 0
   index: -1
 Computer2
   rotate: false
-  xy: 368, 31
-  size: 81, 47
-  orig: 81, 47
+  xy: 728, 68
+  size: 162, 94
+  orig: 162, 94
   offset: 0, 0
   index: -1
 Picture2
   rotate: false
-  xy: 108, 2
-  size: 24, 30
-  orig: 24, 30
+  xy: 970, 450
+  size: 48, 60
+  orig: 48, 60
   offset: 0, 0
   index: -1
 Door1
   rotate: false
-  xy: 451, 58
-  size: 28, 74
-  orig: 28, 74
+  xy: 892, 120
+  size: 56, 148
+  orig: 56, 148
   offset: 0, 0
   index: -1
 Shelf1
   rotate: false
-  xy: 481, 73
-  size: 28, 59
-  orig: 28, 59
+  xy: 950, 150
+  size: 56, 118
+  orig: 56, 118
   offset: 0, 0
   index: -1
 Player1
   rotate: false
-  xy: 490, 225
-  size: 15, 29
-  orig: 15, 29
-  offset: 0, 0
-  index: -1
-Picture3
-  rotate: false
-  xy: 451, 33
-  size: 13, 23
-  orig: 13, 23
-  offset: 0, 0
-  index: -1
-Picture1
-  rotate: false
-  xy: 490, 200
-  size: 12, 23
-  orig: 12, 23
-  offset: 0, 0
-  index: -1
-BuyButtonDown
-  rotate: false
-  xy: 124, 36
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-BuyButtonUp
-  rotate: false
-  xy: 142, 36
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-WatchButtonDown
-  rotate: false
-  xy: 160, 36
-  size: 16, 16
-  orig: 16, 16
-  offset: 0, 0
-  index: -1
-WatchButtonUp
-  rotate: false
-  xy: 178, 36
-  size: 16, 16
-  orig: 16, 16
+  xy: 970, 390
+  size: 30, 58
+  orig: 30, 58
   offset: 0, 0
   index: -1
 Computer1
   rotate: false
-  xy: 481, 60
-  size: 12, 11
-  orig: 12, 11
+  xy: 2, 2
+  size: 24, 22
+  orig: 24, 22
+  offset: 0, 0
+  index: -1
+Picture3
+  rotate: false
+  xy: 892, 72
+  size: 26, 46
+  orig: 26, 46
+  offset: 0, 0
+  index: -1
+Picture1
+  rotate: false
+  xy: 970, 342
+  size: 24, 46
+  orig: 24, 46
   offset: 0, 0
   index: -1
 ShopBDown
   rotate: false
-  xy: 466, 45
-  size: 11, 11
-  orig: 11, 11
+  xy: 28, 2
+  size: 22, 22
+  orig: 22, 22
   offset: 0, 0
   index: -1
 ShopBUp
   rotate: false
-  xy: 490, 187
-  size: 11, 11
-  orig: 11, 11
+  xy: 52, 2
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: -1
+BuyButtonDown
+  rotate: false
+  xy: 244, 76
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+BuyButtonUp
+  rotate: false
+  xy: 278, 76
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+WatchButtonDown
+  rotate: false
+  xy: 312, 76
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+WatchButtonUp
+  rotate: false
+  xy: 346, 76
+  size: 32, 32
+  orig: 32, 32
   offset: 0, 0
   index: -1
 ShopCloseButtonDown
   rotate: false
-  xy: 2, 3
-  size: 9, 5
-  orig: 9, 5
+  xy: 212, 60
+  size: 18, 10
+  orig: 18, 10
   offset: 0, 0
   index: -1
 ShopCloseButtonUp
   rotate: false
-  xy: 196, 47
-  size: 9, 5
-  orig: 9, 5
+  xy: 950, 138
+  size: 18, 10
+  orig: 18, 10
   offset: 0, 0
   index: -1

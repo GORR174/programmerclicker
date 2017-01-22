@@ -98,7 +98,7 @@ public class ScreenItems {
     }
 
     public static void guiIni(){
-        shopButton = new Button(IMG.SHOP_BUTTON_UP.getTextureRegion(), IMG.SHOP_BUTTON_DOWN.getTextureRegion(), 2, 187);
+        shopButton = new Button(IMG.SHOP_BUTTON_UP.getTextureRegion(), IMG.SHOP_BUTTON_DOWN.getTextureRegion(), 4, 374);
         shopButton.setAction(() -> Shop.isOpen = true);
     }
 
@@ -111,9 +111,9 @@ public class ScreenItems {
     }
 
     public static void guiDraw(SpriteBatch batch){
-        batch.draw(IMG.HUD.getTextureRegion(), 0, 182);
+        batch.draw(IMG.HUD.getTextureRegion(), 0, 364);
         shopButton.draw(batch);
-        TextUtils.centerTextRender(Fonts.DEFAULT_FONT.getFont(), String.valueOf(Core.codeLines), 196, batch);
+        TextUtils.centerTextRender(Fonts.DEFAULT_FONT.getFont(), String.valueOf(Core.codeLines), 392, batch);
 
         b1.draw(batch);
         b2.draw(batch);

@@ -5,16 +5,16 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 public enum Upgrades {
 
     HOUSE1(IMG.HOUSE1.getTextureRegion(), 0, 0, 0, true),
-    DOOR1(IMG.DOOR1.getTextureRegion(), 78, 106, 0, true),
-    PICTURE1(IMG.PICTURE1.getTextureRegion(), 30, 154, 0, true),
-    PICTURE2(IMG.PICTURE2.getTextureRegion(), 24, 150, 0, true),
-    PICTURE3(IMG.PICTURE3.getTextureRegion(), 30, 154, 0, true),
-    TABLE1(IMG.TABLE1.getTextureRegion(), 6, 47, 0, true),
+    DOOR1(IMG.DOOR1.getTextureRegion(), 156, 212, 0, true),
+    PICTURE1(IMG.PICTURE1.getTextureRegion(), 60, 308, 0, true),
+    PICTURE2(IMG.PICTURE2.getTextureRegion(), 48, 300, 0, true),
+    PICTURE3(IMG.PICTURE3.getTextureRegion(), 60, 308, 0, true),
+    TABLE1(IMG.TABLE1.getTextureRegion(), 12, 94, 0, true),
     TRASHCAN1(IMG.TRASHCAN1.getTextureRegion(), 0, 0, 0, true),
-    SHELF1(IMG.SHELF1.getTextureRegion(), 0, 90, 0, true),
-    COMPUTER1_1(IMG.COMPUTER1_1.getTextureRegion(), 40, 77, 0, true),
-    COMPUTER1_2(IMG.COMPUTER1_2.getTextureRegion(), 39, 50, 0, true),
-    PlAYER1(IMG.PLAYER1.getTextureRegion(), 35, 81, 0, true)
+    SHELF1(IMG.SHELF1.getTextureRegion(), 0, 180, 0, true),
+    COMPUTER1_1(IMG.COMPUTER1_1.getTextureRegion(), 80, 154, 0, true),
+    COMPUTER1_2(IMG.COMPUTER1_2.getTextureRegion(), 78, 100, 0, true),
+    PlAYER1(IMG.PLAYER1.getTextureRegion(), 70, 162, 0, true)
 
     ;
 

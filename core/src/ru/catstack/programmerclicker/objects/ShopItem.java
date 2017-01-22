@@ -13,8 +13,8 @@ public class ShopItem extends Object {
 
     public ShopItem(String name, float x, float y) {
         super(IMG.SHOP_ITEM.getTextureRegion(), x, y);
-        watchButton = new Button(IMG.WATCH_BUTTON_UP, IMG.WATCH_BUTTON_DOWN, x+3, y+3);
-        buyButton = new Button(IMG.BUY_BUTTON_UP, IMG.BUY_BUTTON_DOWN, x+85, y+3);
+        watchButton = new Button(IMG.WATCH_BUTTON_UP, IMG.WATCH_BUTTON_DOWN, x+6, y+6);
+        buyButton = new Button(IMG.BUY_BUTTON_UP, IMG.BUY_BUTTON_DOWN, x+170, y+6);
         this.name = name;
     }
 
@@ -31,6 +31,6 @@ public class ShopItem extends Object {
         watchButton.draw(batch);
         buyButton.draw(batch);
 
-        TextUtils.centerTextRender(Fonts.DEFAULT_SMALL_FONT.getFont(), name, sprite.getY()+14, batch);
+        TextUtils.centerTextRender(Fonts.DEFAULT_SMALL_FONT.getFont(), name, sprite.getY()+24, batch);
     }
 }
