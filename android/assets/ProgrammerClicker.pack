@@ -66,6 +66,34 @@ Picture2
   orig: 48, 60
   offset: 0, 0
   index: -1
+LeftButtonDown
+  rotate: false
+  xy: 2, 2
+  size: 38, 22
+  orig: 38, 22
+  offset: 0, 0
+  index: -1
+LeftButtonUp
+  rotate: false
+  xy: 42, 2
+  size: 38, 22
+  orig: 38, 22
+  offset: 0, 0
+  index: -1
+RightButtonDown
+  rotate: false
+  xy: 82, 2
+  size: 38, 22
+  orig: 38, 22
+  offset: 0, 0
+  index: -1
+RightButtonUp
+  rotate: false
+  xy: 122, 2
+  size: 38, 22
+  orig: 38, 22
+  offset: 0, 0
+  index: -1
 Door1
   rotate: false
   xy: 892, 120
@@ -89,7 +117,7 @@ Player1
   index: -1
 Computer1
   rotate: false
-  xy: 2, 2
+  xy: 162, 2
   size: 24, 22
   orig: 24, 22
   offset: 0, 0
@@ -110,14 +138,7 @@ Picture1
   index: -1
 ShopBDown
   rotate: false
-  xy: 28, 2
-  size: 22, 22
-  orig: 22, 22
-  offset: 0, 0
-  index: -1
-ShopBUp
-  rotate: false
-  xy: 52, 2
+  xy: 188, 2
   size: 22, 22
   orig: 22, 22
   offset: 0, 0
@@ -150,16 +171,23 @@ WatchButtonUp
   orig: 32, 32
   offset: 0, 0
   index: -1
+ShopBUp
+  rotate: false
+  xy: 212, 48
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: -1
 ShopCloseButtonDown
   rotate: false
-  xy: 212, 60
+  xy: 950, 138
   size: 18, 10
   orig: 18, 10
   offset: 0, 0
   index: -1
 ShopCloseButtonUp
   rotate: false
-  xy: 950, 138
+  xy: 920, 108
   size: 18, 10
   orig: 18, 10
   offset: 0, 0

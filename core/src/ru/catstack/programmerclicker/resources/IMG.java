@@ -28,6 +28,10 @@ public enum IMG {
     BUY_BUTTON_DOWN("BuyButtonDown"),
     WATCH_BUTTON_UP("WatchButtonUp"),
     WATCH_BUTTON_DOWN("WatchButtonDown"),
+    LEFT_BUTTON_UP("LeftButtonUp"),
+    LEFT_BUTTON_DOWN("LeftButtonDown"),
+    RIGHT_BUTTON_UP("RightButtonUp"),
+    RIGHT_BUTTON_DOWN("RightButtonDown"),
     ;
 
     private static final String ATLAS_PATH = "ProgrammerClicker.pack";

@@ -58,4 +58,12 @@ public class ShopItems extends ArrayList<ShopItem>{
     public void setThisPage(int thisPage) {
         this.thisPage = thisPage;
     }
+
+    public int getThisPage() {
+        return thisPage;
+    }
+
+    public int getPages() {
+        return pages;
+    }
 }
