@@ -25,11 +25,7 @@ public enum Upgrades {
     private UpgradeTypes type;
 
     Upgrades(TextureRegion upgradeTexture, float x, float y, int price, UpgradeTypes type) {
-        this.upgradeTexture = upgradeTexture;
-        this.price = price;
-        isHaving = false;
-        this.x = x;
-        this.y = y;
+        this(upgradeTexture, x, y, price, type, false);
     }
 
     Upgrades(TextureRegion upgradeTexture, float x, float y, int price, UpgradeTypes type, boolean isHaving) {
@@ -38,6 +34,7 @@ public enum Upgrades {
         this.isHaving = isHaving;
         this.x = x;
         this.y = y;
+        this.type = type;
     }
 
     public TextureRegion getUpgradeTexture() {

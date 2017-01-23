@@ -1,21 +1,30 @@
 package ru.catstack.programmerclicker.objects;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import ru.catstack.programmerclicker.engine.Core;
 import ru.catstack.programmerclicker.resources.Fonts;
 import ru.catstack.programmerclicker.resources.IMG;
+import ru.catstack.programmerclicker.resources.Upgrades;
+import ru.catstack.programmerclicker.screens.Shop;
 import ru.catstack.programmerclicker.utils.TextUtils;
 
 public class ShopItem extends Object {
 
-    Button watchButton;
-    Button buyButton;
-    String name;
+    private Button watchButton;
+    private Button buyButton;
+    private String name;
+    private Upgrades upgrade;
 
-    public ShopItem(String name, float x, float y) {
+    public ShopItem(String name, Upgrades upgrade, float x, float y) {
         super(IMG.SHOP_ITEM.getTextureRegion(), x, y);
         watchButton = new Button(IMG.WATCH_BUTTON_UP, IMG.WATCH_BUTTON_DOWN, x+6, y+6);
         buyButton = new Button(IMG.BUY_BUTTON_UP, IMG.BUY_BUTTON_DOWN, x+170, y+6);
+        buyButton.setAction(() -> {
+            Core.playerCore.setUpgrade(upgrade);
+            Shop.Close();
+        });
         this.name = name;
+        this.upgrade = upgrade;
     }
 
     @Override

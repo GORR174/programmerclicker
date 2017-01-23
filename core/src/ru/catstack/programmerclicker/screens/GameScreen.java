@@ -8,7 +8,7 @@ import ru.catstack.programmerclicker.utils.Timer;
 
 public class GameScreen extends Base2DScreen {
 
-    ScreenItems screenItems = new ScreenItems();
+    private ScreenItems screenItems = new ScreenItems();
 
     public GameScreen(MyGdxGame myGdxGame) {
         super(myGdxGame);
@@ -29,11 +29,9 @@ public class GameScreen extends Base2DScreen {
     public void update(float delta) {
         super.update(delta);
 
-
-
         screenItems.update();
 
-        if(!screenItems.shop.isOpen) {
+        if(!Shop.isOpen()) {
             everySecond.update(delta);
             if (Gdx.input.justTouched() && !Core.onObjectClicked)
                 Core.codeLines += Core.codeEveryClick;
