@@ -1,6 +1,7 @@
 package ru.catstack.programmerclicker.engine;
 
 import com.badlogic.gdx.utils.viewport.Viewport;
+import ru.catstack.programmerclicker.objects.PlayerCore;
 
 public class Core {
 
@@ -20,6 +21,7 @@ public class Core {
     public static float money = 0;
     public static float moneyEverySecond = 0;
     public static boolean onObjectClicked = false;
+    public static PlayerCore playerCore;
 
     public static void init(final int width, final int height) {
         WIDTH = width;

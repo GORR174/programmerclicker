@@ -1,14 +1,17 @@
 package ru.catstack.programmerclicker.objects;
 
+import ru.catstack.programmerclicker.resources.UpgradeTypes;
 import ru.catstack.programmerclicker.resources.Upgrades;
 
 public class UpgradableObject extends Object{
 
     private Upgrades thisUpgrade;
+    private UpgradeTypes type;
 
-    public UpgradableObject(Upgrades thisUpgrade) {
+    public UpgradableObject(Upgrades thisUpgrade, UpgradeTypes type) {
         super(thisUpgrade.getUpgradeTexture(), thisUpgrade.getX(), thisUpgrade.getY());
         this.thisUpgrade = thisUpgrade;
+        this.type = type;
     }
 
     public void setThisUpgrade(Upgrades thisUpgrade){
@@ -24,5 +27,9 @@ public class UpgradableObject extends Object{
             sprite.setX(thisUpgrade.getX());
             sprite.setY(thisUpgrade.getY());
         }
+    }
+
+    public UpgradeTypes getType() {
+        return type;
     }
 }

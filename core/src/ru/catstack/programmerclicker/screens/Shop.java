@@ -3,33 +3,47 @@ package ru.catstack.programmerclicker.screens;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import ru.catstack.programmerclicker.objects.Button;
 import ru.catstack.programmerclicker.objects.ShopItem;
+import ru.catstack.programmerclicker.resources.Fonts;
 import ru.catstack.programmerclicker.resources.IMG;
+import ru.catstack.programmerclicker.utils.TextUtils;
+
+import java.util.ArrayList;
 
 public class Shop {
 
-    public static boolean isOpen = false;
+    public boolean isOpen = false;
 
-    private static Button close;
+    private Button close;
 
-    private static ShopItem shopItem1;
+    private ArrayList<ShopItem> shopItems = new ArrayList<>();
 
-    public static void ini(){
+    public void ini(){
         close = new Button(IMG.SHOP_CLOSE_BUTTON_UP.getTextureRegion(), IMG.SHOP_CLOSE_BUTTON_DOWN.getTextureRegion(), 208, 376);
         close.setAction(() -> isOpen = false);
 
-        shopItem1 = new ShopItem("Girl picture", 16, 296);
+        shopItems.add(new ShopItem("Awesome curse", 16, 296));
+        shopItems.add(new ShopItem("Mystery Girl", 16, shopItems.get(0).getSprite().getY()-50));
+        shopItems.add(new ShopItem("Through the window", 16, shopItems.get(1).getSprite().getY()-50));
+        shopItems.add(new ShopItem("Through the window1", 16, shopItems.get(2).getSprite().getY()-50));
+        shopItems.add(new ShopItem("Through the window2", 16, shopItems.get(3).getSprite().getY()-50));
+        shopItems.add(new ShopItem("Through the windo3", 16, shopItems.get(4).getSprite().getY()-50));
     }
 
-    public static void update(){
+    public void update(){
         close.update();
 
-        shopItem1.update();
+        for (ShopItem shopItem : shopItems) {
+            shopItem.update();
+        }
     }
 
-    public static void draw(SpriteBatch batch){
+    public void draw(SpriteBatch batch){
         batch.draw(IMG.SHOP_GUI.getTextureRegion(), 0, 0);
         close.draw(batch);
+        TextUtils.centerTextRender(Fonts.DEFAULT_SMALL_FONT.getFont(), "Shop", 384, batch);
 
-        shopItem1.draw(batch);
+        for (ShopItem shopItem : shopItems) {
+            shopItem.draw(batch);
+        }
     }
 }

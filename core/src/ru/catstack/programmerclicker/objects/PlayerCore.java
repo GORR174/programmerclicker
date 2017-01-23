@@ -1,52 +1,89 @@
 package ru.catstack.programmerclicker.objects;
 
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import ru.catstack.programmerclicker.engine.Core;
+import ru.catstack.programmerclicker.objects.interior.*;
 import ru.catstack.programmerclicker.resources.Upgrades;
 
 public class PlayerCore {
 
-    private static Upgrades thisHouse = Upgrades.HOUSE1;
-    private static Upgrades thisDoor = Upgrades.DOOR1;
-    private static Upgrades thisPicture = Upgrades.PICTURE1;
-    private static Upgrades thisTable = Upgrades.TABLE1;
-    private static Upgrades thisTrashcan = Upgrades.TRASHCAN1;
-    private static Upgrades thisShelf = Upgrades.SHELF1;
-    private static Upgrades thisComputer1 = Upgrades.COMPUTER1_1;
-    private static Upgrades thisComputer2 = Upgrades.COMPUTER1_2;
-    private static Upgrades thisPlayer = Upgrades.PlAYER1;
+    public House house;
+    public Door door;
+    public Picture picture;
+    public Table table;
+    public Trashcan trashcan;
+    public Shelf shelf;
+    public Computer1 computer1;
+    public Computer2 computer2;
+    public Player player;
 
-    public static Upgrades getThisHouse() {
-        return thisHouse;
+    public void ini(){
+        house = new House(Upgrades.HOUSE1);
+        door = new Door(Upgrades.DOOR1);
+        picture = new Picture(Upgrades.PICTURE1);
+        table = new Table(Upgrades.TABLE1);
+        trashcan = new Trashcan(Upgrades.TRASHCAN1);
+        shelf = new Shelf(Upgrades.SHELF1);
+        computer1 = new Computer1(Upgrades.COMPUTER1_1);
+        computer2 = new Computer2(Upgrades.COMPUTER1_2);
+        player = new Player(Upgrades.PlAYER1);
+        Core.playerCore = this;
     }
 
-    public static Upgrades getThisDoor() {
-        return thisDoor;
+    public void update() {
+        house.update();
+        door.update();
+        picture.update();
+        table.update();
+        trashcan.update();
+        shelf.update();
+        computer1.update();
+        computer2.update();
+        player.update();
     }
 
-    public static Upgrades getThisPicture() {
-        return thisPicture;
+    public void draw(SpriteBatch batch){
+        house.draw(batch);
+        door.draw(batch);
+        picture.draw(batch);
+        table.draw(batch);
+        shelf.draw(batch);
+        computer1.draw(batch);
+        player.draw(batch);
+        computer2.draw(batch);
+
+        trashcan.draw(batch);
     }
 
-    public static Upgrades getThisTable() {
-        return thisTable;
-    }
-
-    public static Upgrades getThisTrashcan() {
-        return thisTrashcan;
-    }
-
-    public static Upgrades getThisShelf() {
-        return thisShelf;
-    }
-
-    public static Upgrades getThisComputer1() {
-        return thisComputer1;
-    }
-
-    public static Upgrades getThisComputer2() {
-        return thisComputer2;
-    }
-
-    public static Upgrades getThisPlayer() {
-        return thisPlayer;
+    public void setUpgrade(Upgrades upgrade){
+        switch (upgrade.getType()) {
+            case PICTURE:
+                picture.setThisUpgrade(upgrade);
+                break;
+            case COMPUTER1:
+                picture.setThisUpgrade(upgrade);
+                break;
+            case COMPUTER2:
+                computer2.setThisUpgrade(upgrade);
+                break;
+            case DOOR:
+                door.setThisUpgrade(upgrade);
+                break;
+            case HOUSE:
+                house.setThisUpgrade(upgrade);
+                break;
+            case PLAYER:
+                player.setThisUpgrade(upgrade);
+                break;
+            case SHELF:
+                shelf.setThisUpgrade(upgrade);
+                break;
+            case TABLE:
+                table.setThisUpgrade(upgrade);
+                break;
+            case TRASHCAN:
+                trashcan.setThisUpgrade(upgrade);
+                break;
+        }
     }
 }
