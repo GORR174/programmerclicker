@@ -106,16 +106,30 @@ GUI/BuyButtonUp
   orig: 32, 32
   offset: 0, 0
   index: -1
-GUI/WatchButtonDown
+GUI/SettedButtonDown
   rotate: false
   xy: 522, 30
   size: 32, 32
   orig: 32, 32
   offset: 0, 0
   index: -1
-GUI/WatchButtonUp
+GUI/SettedButtonUp
   rotate: false
   xy: 556, 30
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+GUI/WatchButtonDown
+  rotate: false
+  xy: 590, 30
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+GUI/WatchButtonUp
+  rotate: false
+  xy: 624, 30
   size: 32, 32
   orig: 32, 32
   offset: 0, 0

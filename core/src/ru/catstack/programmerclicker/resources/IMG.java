@@ -27,6 +27,8 @@ public enum IMG {
     SHOP_ITEM("GUI/ShopItem"),
     BUY_BUTTON_UP("GUI/BuyButtonUp"),
     BUY_BUTTON_DOWN("GUI/BuyButtonDown"),
+    SETTED_BUTTON_UP("GUI/SettedButtonUp"),
+    SETTED_BUTTON_DOWN("GUI/SettedButtonDown"),
     WATCH_BUTTON_UP("GUI/WatchButtonUp"),
     WATCH_BUTTON_DOWN("GUI/WatchButtonDown"),
     LEFT_BUTTON_UP("GUI/LeftButtonUp"),

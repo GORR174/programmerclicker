@@ -49,4 +49,30 @@ public class Button extends Object{
     public void setAction(Runnable action) {
         this.action = action;
     }
+
+    public void setTexture(TextureRegion upTexture){
+        setTexture(upTexture, downTexture);
+    }
+
+    public void setTexture(TextureRegion upTexture, TextureRegion downTexture){
+        this.upTexture = upTexture;
+        this.downTexture = downTexture;
+        sprite.setRegion(upTexture);
+    }
+
+    public void setTexture(IMG upTexture){
+        setTexture(upTexture.getTextureRegion());
+    }
+
+    public void setTexture(IMG upTexture, IMG downTexture){
+        setTexture(upTexture.getTextureRegion(), downTexture.getTextureRegion());
+    }
+
+    public TextureRegion getUpTexture() {
+        return upTexture;
+    }
+
+    public TextureRegion getDownTexture() {
+        return downTexture;
+    }
 }

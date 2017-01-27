@@ -18,6 +18,10 @@ public class UpgradableObject extends Object{
         this.thisUpgrade = thisUpgrade;
     }
 
+    public Upgrades getThisUpgrade() {
+        return thisUpgrade;
+    }
+
     @Override
     public void update() {
         //set new TextureRegion if TRegion of this object != current TRegion

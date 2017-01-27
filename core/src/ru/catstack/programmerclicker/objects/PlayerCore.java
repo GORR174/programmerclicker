@@ -3,6 +3,7 @@ package ru.catstack.programmerclicker.objects;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import ru.catstack.programmerclicker.engine.Core;
 import ru.catstack.programmerclicker.objects.interior.*;
+import ru.catstack.programmerclicker.resources.UpgradeTypes;
 import ru.catstack.programmerclicker.resources.Upgrades;
 
 public class PlayerCore {
@@ -53,6 +54,31 @@ public class PlayerCore {
         computer2.draw(batch);
 
         trashcan.draw(batch);
+    }
+
+    public Upgrades getUpgradeByType(UpgradeTypes type){
+        switch (type) {
+            case PICTURE:
+                return picture.getThisUpgrade();
+            case COMPUTER1:
+                return computer1.getThisUpgrade();
+            case COMPUTER2:
+                return computer2.getThisUpgrade();
+            case DOOR:
+                return door.getThisUpgrade();
+            case HOUSE:
+                return house.getThisUpgrade();
+            case PLAYER:
+                return player.getThisUpgrade();
+            case SHELF:
+                return shelf.getThisUpgrade();
+            case TABLE:
+                return table.getThisUpgrade();
+            case TRASHCAN:
+                return trashcan.getThisUpgrade();
+            default:
+                return null;
+        }
     }
 
     public void setUpgrade(Upgrades upgrade){

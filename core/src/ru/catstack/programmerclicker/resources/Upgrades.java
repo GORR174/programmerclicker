@@ -6,8 +6,8 @@ public enum Upgrades {
 
     HOUSE1(IMG.HOUSE1.getTextureRegion(), 0, 0, 0, UpgradeTypes.HOUSE, true),
     DOOR1(IMG.DOOR1.getTextureRegion(), 156, 212, 0, UpgradeTypes.DOOR, true),
-    PICTURE0(IMG.PICTURE0.getTextureRegion(), 70, 276, 0, UpgradeTypes.PICTURE, true),
-    PICTURE1(IMG.PICTURE1.getTextureRegion(), 60, 308, 0, UpgradeTypes.PICTURE),
+    PICTURE0(IMG.PICTURE0.getTextureRegion(), 60, 276, 0, UpgradeTypes.PICTURE, true),
+    PICTURE1(IMG.PICTURE1.getTextureRegion(), 60, 308, 0, UpgradeTypes.PICTURE, true),
     PICTURE2(IMG.PICTURE2.getTextureRegion(), 48, 300, 0, UpgradeTypes.PICTURE),
     PICTURE3(IMG.PICTURE3.getTextureRegion(), 60, 308, 0,  UpgradeTypes.PICTURE),
     TABLE1(IMG.TABLE1.getTextureRegion(), 12, 94, 0, UpgradeTypes.TABLE, true),
