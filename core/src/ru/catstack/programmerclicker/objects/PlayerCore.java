@@ -20,7 +20,7 @@ public class PlayerCore {
     public void ini(){
         house = new House(Upgrades.HOUSE1);
         door = new Door(Upgrades.DOOR1);
-        picture = new Picture(Upgrades.PICTURE1);
+        picture = new Picture(Upgrades.PICTURE0);
         table = new Table(Upgrades.TABLE1);
         trashcan = new Trashcan(Upgrades.TRASHCAN1);
         shelf = new Shelf(Upgrades.SHELF1);

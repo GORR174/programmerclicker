@@ -35,6 +35,7 @@ public class Shop {
                 shopItems.addPage();
         });
 
+        shopItems.addShopItem("Broken picture", Upgrades.PICTURE0);
         shopItems.addShopItem("Awesome curse", Upgrades.PICTURE1);
         shopItems.addShopItem("Mystery Girl", Upgrades.PICTURE3);
         shopItems.addShopItem("Through the window", Upgrades.PICTURE2);
