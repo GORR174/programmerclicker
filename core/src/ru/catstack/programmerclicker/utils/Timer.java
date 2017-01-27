@@ -50,4 +50,12 @@ public class Timer {
     public Runnable getAction() {
         return action;
     }
+
+    public float getFinalTime() {
+        return finalTime;
+    }
+
+    public float getThisTime() {
+        return thisTime;
+    }
 }

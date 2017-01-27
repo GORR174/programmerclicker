@@ -7,6 +7,12 @@ import ru.catstack.programmerclicker.engine.Core;
 
 public class TextUtils {
 
+    public static float getHalfOfText(BitmapFont font, String text){
+        GlyphLayout layout = new GlyphLayout();
+        layout.setText(font, text);
+        return layout.width/2f;
+    }
+
     public static float getCenterOfText(BitmapFont font, String text){
         GlyphLayout layout = new GlyphLayout();
         layout.setText(font, text);
