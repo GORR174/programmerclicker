@@ -26,24 +26,38 @@ public class Shop {
 
     public void ini(){
         closeButton = new Button(IMG.SHOP_CLOSE_BUTTON_UP, IMG.SHOP_CLOSE_BUTTON_DOWN, 208, 376);
-        closeButton.setAction(() -> isOpen = false);
+        closeButton.setAction(new Runnable() {
+            @Override
+            public void run() {
+                isOpen = false;
+            }
+        });
 
         leftButton = new Button(IMG.LEFT_BUTTON_UP, IMG.LEFT_BUTTON_DOWN, 22, 18);
-        leftButton.setAction(() -> {
-            if(shopItems.getThisPage() > 1)
-                shopItems.subtractPage();
+        leftButton.setAction(new Runnable() {
+            @Override
+            public void run() {
+                if (shopItems.getThisPage() > 1)
+                    shopItems.subtractPage();
+            }
         });
 
         rightButton = new Button(IMG.RIGHT_BUTTON_UP, IMG.RIGHT_BUTTON_DOWN, 180, 18);
-        rightButton.setAction(() -> {
-            if(shopItems.getThisPage() < shopItems.getPages())
-                shopItems.addPage();
+        rightButton.setAction(new Runnable() {
+            @Override
+            public void run() {
+                if (shopItems.getThisPage() < shopItems.getPages())
+                    shopItems.addPage();
+            }
         });
 
         closeWatchButton = new Button(IMG.WATCH_BUTTON_UP, IMG.WATCH_BUTTON_DOWN, Core.D_WIDTH_HALF-16, 32);
-        closeWatchButton.setAction(() -> {
-            Core.playerCore.setUpgrade(saveUpgrade);
-            isHide = false;
+        closeWatchButton.setAction(new Runnable() {
+            @Override
+            public void run() {
+                Core.playerCore.setUpgrade(saveUpgrade);
+                isHide = false;
+            }
         });
 
         shopItems.addShopItem("Broken picture", Upgrades.PICTURE0);

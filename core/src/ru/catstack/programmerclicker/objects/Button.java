@@ -8,7 +8,11 @@ import ru.catstack.programmerclicker.utils.Utils;
 
 public class Button extends Object{
 
-    private Runnable action = () -> {};
+    private Runnable action = new Runnable() {
+        @Override
+        public void run() {
+        }
+    };
     private boolean isTouched = false;
     private TextureRegion upTexture;
     private TextureRegion downTexture;

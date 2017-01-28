@@ -53,7 +53,12 @@ public class ScreenItems {
 
     public void guiIni(){
         shopButton = new Button(IMG.SHOP_BUTTON_UP.getTextureRegion(), IMG.SHOP_BUTTON_DOWN.getTextureRegion(), 4, 374);
-        shopButton.setAction(() -> Shop.Open());
+        shopButton.setAction(new Runnable() {
+            @Override
+            public void run() {
+                Shop.Open();
+            }
+        });
     }
 
     public void guiUpdate(){

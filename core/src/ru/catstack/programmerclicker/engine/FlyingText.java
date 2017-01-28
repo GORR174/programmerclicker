@@ -27,7 +27,12 @@ public class FlyingText {
         this.text = text;
         font = Fonts.DEFAULT_SMALL_FONT.getFont();
         font = new BitmapFont(font.getData(), font.getRegion(), font.usesIntegerPositions());
-        timer = new Timer(1+new Random().nextInt(3)+new Random().nextFloat(), () -> delete=true);
+        timer = new Timer(1+new Random().nextInt(3)+new Random().nextFloat(), new Runnable() {
+            @Override
+            public void run() {
+                delete = true;
+            }
+        });
     }
 
     public boolean update(){

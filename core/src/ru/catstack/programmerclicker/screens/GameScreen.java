@@ -19,9 +19,12 @@ public class GameScreen extends Base2DScreen {
         super(myGdxGame);
     }
 
-    Timer everySecond = new Timer(1, () -> {
-        Core.codeLines += Core.codeEverySecond;
-        Core.money += Core.moneyEverySecond;
+    Timer everySecond = new Timer(1, new Runnable() {
+        @Override
+        public void run() {
+            Core.codeLines += Core.codeEverySecond;
+            Core.money += Core.moneyEverySecond;
+        }
     });
 
     @Override

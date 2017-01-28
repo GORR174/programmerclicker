@@ -19,15 +19,21 @@ public class ShopItem extends Object {
         super(IMG.SHOP_ITEM.getTextureRegion(), x, y);
         watchButton = new Button(IMG.WATCH_BUTTON_UP, IMG.WATCH_BUTTON_DOWN, x+6, y+6);
         buyButton = new Button(IMG.BUY_BUTTON_UP, IMG.BUY_BUTTON_DOWN, x+170, y+6);
-        watchButton.setAction(() -> {
-            Shop.saveUpgrade = Core.playerCore.getUpgradeByType(this.upgrade.getType());
-            Core.playerCore.setUpgrade(upgrade);
-            Shop.hide();
+        watchButton.setAction(new Runnable() {
+            @Override
+            public void run() {
+                Shop.saveUpgrade = Core.playerCore.getUpgradeByType(ShopItem.this.upgrade.getType());
+                Core.playerCore.setUpgrade(upgrade);
+                Shop.hide();
+            }
         });
         // TODO: 27.01.2017 add buying system & have texture
-        buyButton.setAction(() -> {
-            if(this.upgrade.isHaving()) {
-                Core.playerCore.setUpgrade(upgrade);
+        buyButton.setAction(new Runnable() {
+            @Override
+            public void run() {
+                if (ShopItem.this.upgrade.isHaving()) {
+                    Core.playerCore.setUpgrade(upgrade);
+                }
             }
         });
         this.name = name;

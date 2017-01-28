@@ -4,7 +4,11 @@ public class Timer {
 
     private float thisTime = 0;
     private float finalTime;
-    private Runnable action = () -> {};
+    private Runnable action = new Runnable() {
+        @Override
+        public void run() {
+        }
+    };
     private boolean isPause = false;
 
     public Timer(float finalTime){
